@@ -128,3 +128,27 @@ clean:
 	@rm -fr */__pycache__ __pycache__
 	@rm -fr build dist *.dist-info *.egg-info
 	@rm -fr */*.pyc
+
+# ----------------------------------
+#         HEROKU COMMANDS
+# ----------------------------------
+
+APP_NAME = skicade
+
+streamlit:
+	-@streamlit run website.py
+
+heroku_login:
+	-@heroku login
+
+heroku_upload_public_key:
+	-@heroku keys:add ~/.ssh/id_ed25519.pub
+
+heroku_create_app:
+	-@heroku create --ssh-git ${APP_NAME}
+
+deploy_heroku:
+	-@git push heroku main
+	-@heroku ps:scale web=1
+
+# ----------------------------------
