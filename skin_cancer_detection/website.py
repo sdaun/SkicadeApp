@@ -81,10 +81,8 @@ if agree:
         else:
             X_input = np.asarray(Image.open(camera_file).resize((224,224)))
         X_input_stack = np.reshape(X_input,(1,224,224,3))
-        #st.markdown(f'### predicted type: {X_input_stack.shape}')
 
-        joblib_model = joblib.load('basic_model1_224_augmented_epoch45.joblib')
-        # loaded_model = pickle.load(open('basic_with_aug_model', 'rb'))
+        joblib_model = joblib.load('skin_cancer_detection/basic_model1_224_augmented_epoch45.joblib')
         cancer_type = joblib_model.predict(X_input_stack)
         probability = cancer_type
             #[np.argmax(cancer_type)]*100
