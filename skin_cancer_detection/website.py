@@ -92,7 +92,7 @@ if agree:
         # st.markdown(f'### predicted type: {endresult}, probability:{probability}')
         if endresult == 'benign keratosis-like lesions':
             st.markdown('These include solar lentigines / seborrheic keratoses and lichen-planus like keratoses')
-            image = Image.open('green.jpg')
+            image = Image.open('skin_cancer_detection/green.jpg')
             col1, col2, col3 = st.columns([1,6,1])
             with col1:
                 st.write("")
@@ -103,7 +103,7 @@ if agree:
             st.markdown("They appear gradually, usually on the face, neck, chest or back. Seborrheic keratoses are harmless and not contagious. They don't need treatment, but you may decide to have them removed if they become irritated by clothing or you don't like how they look. (Source: mayoclinic.org")
         if endresult == 'vascular lesions':
             st.markdown('These include angiomas, angiokeratomas, pyogenic granulomas and hemorrhage')
-            image = Image.open('green.jpg')
+            image = Image.open('skin_cancer_detection/green.jpg')
             col1, col2, col3 = st.columns([1,6,1])
             with col1:
                 st.write("")
@@ -113,7 +113,7 @@ if agree:
                 st.write("")
             st.markdown("Vascular lesions are relatively common abnormalities of the skin and underlying tissues, more commonly known as birthmarks. (Source: ssmhealth.com)")
         if endresult == 'melanoma':
-            image = Image.open('red.jpg')
+            image = Image.open('skin_cancer_detection/red.jpg')
             col1, col2, col3 = st.columns([1,6,1])
             with col1:
                 st.write("")
@@ -123,7 +123,7 @@ if agree:
                 st.write("")
             st.markdown("Melanoma is a serious form of skin cancer that begins in cells known as melanocytes. While it is less common than basal cell carcinoma (BCC) and squamous cell carcinoma (SCC), melanoma is more dangerous because of its ability to spread to other organs more rapidly if it is not treated at an early stage. (Source: skincancer.org)")
         if endresult == 'melanocytic nevi':
-            image = Image.open('green.jpg')
+            image = Image.open('skin_cancer_detection/green.jpg')
             col1, col2, col3 = st.columns([1,6,1])
             with col1:
                 st.write("")
@@ -133,7 +133,7 @@ if agree:
                 st.write("")
             st.markdown("A melanocytic naevus, or mole, is a common benign skin lesion due to a local proliferation of pigment cells (melanocytes). A brown or black melanocytic naevus contains the pigment melanin, so may also be called a pigmented naevus. It can be present at birth (a congenital melanocytic naevus) or appear later (an acquired naevus). (Source: dermnetnz.org)")
         if endresult == 'dermatofibroma':
-            image = Image.open('green.jpg')
+            image = Image.open('skin_cancer_detection/green.jpg')
             col1, col2, col3 = st.columns([1,6,1])
             with col1:
                 st.write("")
@@ -143,7 +143,7 @@ if agree:
                 st.write("")
             st.markdown("Dermatofibromas are common noncancerous (benign) skin growths. They are firm to hard, and they are skin-colored or slightly pigmented. These lesions usually persist for life, and they may heal as depressed scars after several years. (Source: skinsight.com)")
         if endresult == 'basal cell carcinoma':
-            image = Image.open('red.jpg')
+            image = Image.open('skin_cancer_detection/red.jpg')
             col1, col2, col3 = st.columns([1,6,1])
             with col1:
                 st.write("")
@@ -153,7 +153,7 @@ if agree:
                 st.write("")
             st.markdown("A basal cell carcinoma is a cancerous skin lesion and the most common type of skin cancer. It most often develops in skin areas which have been exposed to direct sunlight. Although it grows slowly and seldomly spreads to another part of the body, treatment is important. Given time to grow, this skin cancer can grow deep, injuring nerves, blood vessels, and anything else in its path. (Source: aad.org)")
         if endresult == "Actinic keratoses and intraepithelial carcinoma / Bowen's disease":
-            image = Image.open('yellow.jpg')
+            image = Image.open('skin_cancer_detection/yellow.jpg')
             col1, col2, col3 = st.columns([1,6,1])
             with col1:
                 st.write("")
