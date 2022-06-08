@@ -136,7 +136,7 @@ clean:
 APP_NAME = skicade
 
 streamlit:
-	-@streamlit run website.py
+	-@streamlit run skin_cancer_detection/website.py
 
 heroku_login:
 	-@heroku login
