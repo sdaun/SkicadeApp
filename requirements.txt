@@ -10,7 +10,7 @@ pandas
 scikit-learn
 matplotlib
 seaborn
-tensorflow
+tensorflow-cpu
 
 # tests/linter
 black
