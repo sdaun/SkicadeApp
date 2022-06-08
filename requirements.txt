@@ -7,10 +7,10 @@ wheel>=0.29
 # data science
 numpy
 pandas
-scikit-learn
-matplotlib
-seaborn
-tensorflow-cpu
+#scikit-learn
+#matplotlib
+#seaborn
+tensorflow-cpu==2.9.1
 
 # tests/linter
 black
@@ -20,9 +20,9 @@ pytest
 yapf
 
 # API
-gcsfs
-google-cloud-storage
-mlflow
+#gcsfs
+#google-cloud-storage
+#mlflow
 s3fs
 streamlit
 
